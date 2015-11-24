@@ -16,6 +16,10 @@ import java.sql.Statement;
  */
 public class DatabaseCreate {
     
+    public int DatabaseCreate() {
+        return 0;
+    }
+    
     
     // Pre - Must supply:
     // databaseName = "jdbc.mysql://localhost/MillerLiteGame";
@@ -25,7 +29,7 @@ public class DatabaseCreate {
     // Function returns 0 if it creates successfully
     // It returns an error code if there is an SQL failure
     
-    public static int dCreate(String databaseName, String databaseUser, String databasePassword )  
+    public static int DatabaseCreate(String databaseName, String databaseUser, String databasePassword )  
         throws SQLException, ClassNotFoundException {
         try {
             // Load the JDBC driver
@@ -141,6 +145,6 @@ public class DatabaseCreate {
         }   // end of finally
 
    }       // end of throw
-    
+   
 }   // end of class
 
