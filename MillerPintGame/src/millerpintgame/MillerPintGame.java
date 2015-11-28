@@ -4,6 +4,9 @@
  */
 package millerpintgame;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -12,10 +15,14 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import static millerpintgame.DatabaseConnect.DatabaseConnect;
+//import static millerpintgame.DatabaseCreate.DatabaseCreate;
 
 /**
  *
@@ -27,7 +34,11 @@ public class MillerPintGame extends Application {
     private final TextField tfSQLaddress = new TextField();
     private final TextField tfSQLusernsme = new TextField();
     private final TextField tfSQLpassword = new TextField();
-    private final TextField tfSQLresults = new TextField();
+    private final TextArea tfSQLresults = new TextArea();
+    private String databaseName = "localhost/MillerLiteGame";
+    private String databaseUser = "admin";
+    private String databasePassword = "password";
+    
     
         
        
@@ -42,36 +53,64 @@ public class MillerPintGame extends Application {
         pane.setHgap(5.5);
         pane.setVgap(5.5);
         
+        // Add some text to the top of the field
+        Text banner = new Text (0,0, " Database Creation");
+        
         //Place the nodes on the pane
-        pane.add(new Label("MySQL Server"), 0, 0);
-        pane.add(tfSQLaddress, 1,0);
-        pane.add(new Label("Username"), 1, 0);
-        pane.add(new Label("Password"), 1, 1);
+        pane.add(new Label("MySQL Server"), 0, 1);
+        pane.add(tfSQLaddress, 1,1);
+        pane.add(new Label("Username"), 0, 2);
+        pane.add(tfSQLusernsme, 1,2);
+        pane.add(new Label("Password"), 0, 3);
+        pane.add(tfSQLpassword, 1,3);
+        
+        // Set the initial values
+        tfSQLaddress.minWidth(50);
+        tfSQLaddress.setText(databaseName);
+        tfSQLusernsme.setText(databaseUser);
+        tfSQLpassword.setText(databasePassword);
         
         // Place a results field
-        pane.add(new Label("Result"), 0, 4);
+        pane.add(new Label("Result"), 0, 6);
+        tfSQLresults.isEditable();
+        tfSQLresults.setPrefSize(50, 20);
+        pane.add(tfSQLresults, 1,6);
         
         
         // Place a Connect Button
         Button btnConnect = new Button("Connect");
-        pane.add(btnConnect, 1, 3);
-        btnConnect.setOnAction(new EventHandler<ActionEvent>() {
-            
-            @Override
-            public void handle(ActionEvent event) {
-                // Put the connect code in here!
+        pane.add(btnConnect, 1, 5);
+        btnConnect.setOnAction(e -> {
+                try {
+                    createDB();
+                } catch (ClassNotFoundException ex) {
+                    Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
         
-        StackPane root = new StackPane();
-        root.getChildren().add(btnConnect);
-        
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(pane, 600, 500);
         
         primaryStage.setTitle("Miller Pint Game");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    
+    private void createDB() throws SQLException, ClassNotFoundException {
+        // This is the code that calls the DataBase Create
+        String dbFullAddress = tfSQLaddress.getText();
+        String dbUserName = tfSQLusernsme.getText();
+        String dbPassword = tfSQLpassword.getText();
+        
+        
+        // Now display the text in the panel when the button is pressed
+        tfSQLresults.setText(dbFullAddress + "\n" + dbUserName + "\n" + dbPassword);
+        int dbReturn =  DatabaseConnect(dbFullAddress, dbUserName, dbPassword);
+        String dbMessage = Integer.toString(dbReturn);
+        tfSQLresults.setText(dbMessage);
+    }
+    
 
     /**
      * @param args the command line arguments
@@ -79,5 +118,7 @@ public class MillerPintGame extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
+
+   
 }
