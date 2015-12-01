@@ -5,6 +5,7 @@
 package millerpintgame;
 
 import java.sql.SQLException;
+import java.util.concurrent.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Application;
@@ -22,7 +23,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import static millerpintgame.DatabaseConnect.DatabaseConnect;
-//import static millerpintgame.DatabaseCreate.DatabaseCreate;
+import static millerpintgame.DatabaseCreate.DatabaseCreate;
 
 /**
  *
@@ -35,9 +36,9 @@ public class MillerPintGame extends Application {
     private final TextField tfSQLusernsme = new TextField();
     private final TextField tfSQLpassword = new TextField();
     private final TextArea tfSQLresults = new TextArea();
-    private String databaseName = "localhost/MillerLiteGame";
-    private String databaseUser = "admin";
-    private String databasePassword = "password";
+    private String databaseName = "localhost";
+    private String databaseUser = "david";
+    private String databasePassword = "leoleo";
     
     
         
@@ -80,14 +81,18 @@ public class MillerPintGame extends Application {
         // Place a Connect Button
         Button btnConnect = new Button("Connect");
         pane.add(btnConnect, 1, 5);
-        btnConnect.setOnAction(e -> {
+        btnConnect.setOnAction((ActionEvent e) -> {
+            
                 try {
-                    createDB();
+                    connectDB();
                 } catch (ClassNotFoundException ex) {
                     Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (SQLException ex) {
-                Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
-            }
+                    Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
+                    System.out.println("first attemptat connection");
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(MillerPintGame.class.getName()).log(Level.SEVERE, null, ex);
+                }
         });
         
         Scene scene = new Scene(pane, 600, 500);
@@ -97,7 +102,7 @@ public class MillerPintGame extends Application {
         primaryStage.show();
     }
     
-    private void createDB() throws SQLException, ClassNotFoundException {
+    private void connectDB() throws SQLException, ClassNotFoundException, InterruptedException {
         // This is the code that calls the DataBase Create
         String dbFullAddress = tfSQLaddress.getText();
         String dbUserName = tfSQLusernsme.getText();
@@ -109,6 +114,20 @@ public class MillerPintGame extends Application {
         int dbReturn =  DatabaseConnect(dbFullAddress, dbUserName, dbPassword);
         String dbMessage = Integer.toString(dbReturn);
         tfSQLresults.setText(dbMessage);
+        if (dbReturn == 8801){
+            tfSQLresults.setText("Retrying");
+            Thread.sleep(1000);
+            int dbReturn2 =  DatabaseConnect(dbFullAddress, dbUserName, dbPassword);
+            if (dbReturn2 == 8801){
+                tfSQLresults.setText("Database does not respond.\nIs it running?");
+            }
+           
+        }
+    }
+    private void createDB() throws SQLException, ClassNotFoundException {
+        String schema = "game";
+        int dbCreateStatus = DatabaseCreate(schema);
+        System.out.println(schema);
     }
     
 
