@@ -18,7 +18,7 @@ import ConnectToDB.*;
  *
  * @author Soukaina
  */
-public class UserLogin extends Application {
+public class UserLoginOrig extends Application {
        
     //Create a Button 
     Button loginBtn = new Button("Login");

@@ -16,7 +16,6 @@ public class UserIO {
    //Create a default constructor 
     public UserIO()
     {
-        //It should be nothing inside 
         
     }
           
