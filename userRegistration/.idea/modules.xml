@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../GitGame/BHCC_Game/userRegistration/userRegistration.iml" filepath="$PROJECT_DIR$/../GitGame/BHCC_Game/userRegistration/userRegistration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userRegistration.iml" filepath="$PROJECT_DIR$/userRegistration.iml" />
     </modules>
   </component>
 </project>

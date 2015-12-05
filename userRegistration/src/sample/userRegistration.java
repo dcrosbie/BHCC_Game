@@ -1,5 +1,7 @@
 package sample;
 
+//User Registration Page for BHCC Game
+//Written by Blake DeLee
 
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -20,7 +22,7 @@ import javafx.stage.Stage;
 
 import java.sql.*;
 
-public class Registration extends Application {
+public class userRegistration extends Application {
     static boolean bError = false; //flag for username already in database
     static boolean bSuccess = false; //flag for successfully registered username
     @Override
