@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package RuleClasses;
+
 /**
  *
- * @author admin
+ * @author ct-D103
  */
-//import infomation.java;
-public class Battle {
-    //Infomation asd = new Infomation;
+public class ScoringSystem {
     
 }

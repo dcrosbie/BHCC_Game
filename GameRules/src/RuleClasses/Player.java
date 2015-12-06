@@ -1,16 +1,19 @@
+package RuleClasses;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+ 
 /**
  *
  * @author admin
  */
-public class Infomation{//information
+public class Player{//information
     
-    private int attacker, defender, farmer, credit;
+    private int attacker, defender, farmer;
+    protected int credit;
     private String playerID;
     //private double attack_defender_kdr, income_per_round, income_per_farmer,
      //       victoryReward;
@@ -18,8 +21,16 @@ public class Infomation{//information
     
     /**
      *
-     * @param attacker
+     * @param
      */
+    public void Initialize(String playerName, int initCredits)
+    {
+        attacker = 0;
+        defender = 0;
+        farmer = 0;
+        playerID = playerName;
+        credit = initCredits;
+    }
     
     public void getAttacker(int getattacker)
     {
@@ -36,10 +47,16 @@ public class Infomation{//information
         farmer = getFarmer;
     }
     
+    public void getCredit(int input)
+    {
+        credit = input;
+    }
+    
     public void getPlayerID(String getplayerID)
     {
         playerID = getplayerID;
     }
+    
     public int ValueAttacker()
     {
         return attacker;
@@ -59,6 +76,8 @@ public class Infomation{//information
     {
         return playerID;
     }
+    
+    
     
     
 }
