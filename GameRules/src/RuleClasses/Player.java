@@ -8,7 +8,7 @@ package RuleClasses;
  
 /**
  *
- * @author admin
+ * @author KaihengHe
  */
 public class Player{//information
     
@@ -23,7 +23,7 @@ public class Player{//information
      *
      * @param
      */
-    public void Initialize(String playerName, int initCredits)
+    public void Initialize(String playerName, int initCredits) //initialize the player info besides player name
     {
         attacker = 0;
         defender = 0;

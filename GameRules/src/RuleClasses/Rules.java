@@ -8,7 +8,7 @@ package RuleClasses;
 
 /**
  *
- * @author admin
+ * @author KaihengHe
  */
 public class Rules {
     protected int income_value_per_round, 

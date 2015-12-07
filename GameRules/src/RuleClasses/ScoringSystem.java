@@ -7,7 +7,7 @@ package RuleClasses;
 
 /**
  *
- * @author ct-D103
+ * @author KaihengHe
  */
 public class ScoringSystem {
     

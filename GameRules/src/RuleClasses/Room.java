@@ -10,7 +10,7 @@ import RuleClasses.Player;
 import RuleClasses.Rules;
 /*
  *
- * @author admin
+ * @author KaihengHe
  */
 //import infomation.java;
 public class Room 
@@ -114,26 +114,44 @@ public class Room
       
       public int buildWorkers(int playerID, int worker)
       {
+          if(player[playerID].credit > (worker*rule.workerValue))
+              return -1; //unable to build unit
+          else
+          {
            player[playerID].getFarmer(worker + player[playerID].ValueFarmer());
+           player[playerID].getCredit(player[playerID].credit 
+                   - (worker*rule.workerValue));
+           
+           return worker*rule.workerValue;
+                     //return moneyspent
+          }          
           
-          return 0;
-          //return moneyspent, needs to be changed
+
       }
       
        public int buildAttackers(int playerID, int attacker)
       {
+          if(player[playerID].credit > (attacker*rule.attackerValue))
+              return -1;//unable to build unit
+          else{
            player[playerID].getAttacker(attacker+ player[playerID].ValueAttacker());
-          
-          return 0;
-          //return moneyspent, needs to be changed
+          player[playerID].getCredit(player[playerID].credit 
+                   - (attacker*rule.attackerValue));
+          return attacker*rule.attackerValue;    //return moneyspent
+          }
       }
        
          public int buildDefenders(int playerID, int defender)
       {
+            if(player[playerID].credit > (defender*rule.defenderValue))
+              return -1;//unable to build unit
+          else{
            player[playerID].getDefender(defender + player[playerID].ValueDefender());
-          
-          return 0;
-          //return moneyspent, needs to be changed
+          player[playerID].getCredit(player[playerID].credit 
+                   - (defender*rule.defenderValue));
+          return defender*rule.defenderValue;
+            }
+          //return moneyspent
       }
       
 
