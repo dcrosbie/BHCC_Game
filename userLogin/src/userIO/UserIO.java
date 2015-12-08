@@ -14,8 +14,8 @@ import java.sql.*;
 public class UserIO {
   
     private ResultSet res;
-    private User user=new User();
-    private ArrayList<User> users=new ArrayList<>();  
+    private User user=new User();  //Create a Round object 
+    private ArrayList<User> users=new ArrayList<>();  // create an arraylist
     
    //Create a default constructor 
     public UserIO()
@@ -28,7 +28,7 @@ public class UserIO {
     
     public void readUsers(ConnecToDB conn)
     {
-        // Create a query 
+        // Create a query to select all records from User table in database
         String query="SELECT * FROM PLAYER";
         
         try
@@ -47,7 +47,7 @@ public class UserIO {
     
     
     //This method accept a username as a paramter to go look in the array list return
-    //by readusers() methods above and see if the username existe or not. 
+    //by readusers() method above and see if the username existe or not. 
    
    public int checkTheUserOut(String username)
    {
@@ -59,6 +59,6 @@ public class UserIO {
               userId=users.get(i).getUserId();
           }
       }
-      return userId;
+      return userId; // returns the user Id if the username (passed as parameter) is found in the arraylist. 
    }
 }
