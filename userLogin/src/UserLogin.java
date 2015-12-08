@@ -8,7 +8,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.geometry.Pos;
-
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import userIO.*;
@@ -50,27 +49,34 @@ public class UserLogin extends Application {
         borderPane.setCenter(pane);
         
 
-
+       // Envent handler when the login button is clicked
         loginBtn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
-                 ConnecToDB conn=new ConnecToDB();
+                   // creating my objects 
+                 ConnecToDB conn=new ConnecToDB(); 
                  UserIO userIO=new UserIO();
                  userIO.readUsers(conn);
+                 
+                 // if the user name exist process whatever operations in the if statment 
                  if(userIO.checkTheUserOut(userNameInput.getText())!=0)
                  {
                      System.out.println("User existe");
-                     // Rachid's code 
+                     
+                     // Rachid's code can go here......
                  }
                  else 
                  {
-                     //send the user to a registration page..... (Blake's code)
+                     // error message 
                      System.out.println("user doesn't existe.Create a new one...");
+                     
+                      //send the user to a registration page..... (Blake's code can go here)
+
                  }
             }
         });
-        
+        // put the scene in the stage
         Scene scene = new Scene(borderPane, 400, 350);
         primaryStage.setTitle(" User login ");
         primaryStage.setScene(scene);
