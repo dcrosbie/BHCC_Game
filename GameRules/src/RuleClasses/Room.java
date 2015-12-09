@@ -18,6 +18,7 @@ public class Room
     int maxPlayerValue;
     Player[] player;
     Rules rule;
+    int round, currentSeatNumber;
 
     //Battle() 
     //{
@@ -26,16 +27,41 @@ public class Room
     {
         maxPlayerValue = rule.maxiumPlayer;
     }
+    public void playerJoinRoom(Player addplayer, int seatNumber)
+    {
+        player[seatNumber] = addplayer;
+    }
+    public int nextRound()
+    {
+        boolean allReady = true;
+        for(int i = 0; i < currentSeatNumber; i++)
+            allReady = (player[i].isReady ? allReady : false);//make sure everyone is ready
+        if(!allReady)
+        {return -1;}//return -1 if someone is not ready
+        else
+        {
+        for(int i = 0; i < currentSeatNumber; i++)
+        player[i].playerNotReady();
+       return round++;//returning  the current round number
+        }
+    }
+    
+     public int forceNextRound()
+    {
+        for(int i = 0; i < currentSeatNumber; i++)
+            player[i].playerNotReady();
+       return round++;//returning  the current round number
+    }
+    
      public void makeNewRoom()
     {
         player[maxPlayerValue] = new Player();
     }
-     public void makeRule()
+     public void makeRulesDefault()
      {
          rule.makeDefault();
          //needs to be changed
      }
-     
      public void getRules(Rules input)
      {
          rule = input;

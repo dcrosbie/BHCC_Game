@@ -15,6 +15,7 @@ public class Player{//information
     private int attacker, defender, farmer;
     protected int credit;
     private String playerID;
+    protected boolean isReady = false;
     //private double attack_defender_kdr, income_per_round, income_per_farmer,
      //       victoryReward;
    // private boolean enableFarmerKilling, isVictoryRewardInRate;
@@ -75,6 +76,15 @@ public class Player{//information
     public String ValuePlayerID()
     {
         return playerID;
+    }
+    
+    public void playerReady()
+    {
+        isReady = true;
+    }
+     public void playerNotReady()
+    {
+        isReady = false;
     }
     
     
