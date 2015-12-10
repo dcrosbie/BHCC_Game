@@ -40,6 +40,8 @@ public class UserMenuPane extends BorderPane{
     private  ArrayList<Round> rounds = new ArrayList<>();
     
     //userid obtained when user logged in 
+    //This default value must be deleted and replaced by the ID that's being returned from soukaina's code 
+    //once we put the peaces together.
     int userId =1;
     
     //Create a boolean variable to see if the player existe in Round table
