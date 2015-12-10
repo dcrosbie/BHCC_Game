@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab text="Log In">
+            <content>
+                <AnchorPane>
+                    <children>
+                        <TextField fx:id="logUsername" layoutX="355.0" layoutY="352.0" />
+                        <Label layoutX="184.0" layoutY="359.0" text="Enter Username: " />
+                        <Button fx:id="logButton" layoutX="355.0" layoutY="586.0" mnemonicParsing="false" text="Log In" />
+                        <Text layoutX="248.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page">
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font size="62.0" />
+                            </font>
+                        </Text>
+                        <Label fx:id="logBad" layoutX="486.0" layoutY="660.0" text="Username not found!" textFill="#900a0a" visible="false">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="logGood" layoutX="474.0" layoutY="660.0" text="Logging in!" textFill="#109712" visible="false">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Register">
+            <content>
+                <AnchorPane>
+                    <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="regUsername" layoutX="355.0" layoutY="352.0" />
+                                <Label layoutX="184.0" layoutY="359.0" text="Enter Username: " />
+                            </children>
+                        </AnchorPane>
+                        <Text layoutX="159.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Page">
+                            <effect>
+                                <DropShadow />
+                            </effect>
+                            <font>
+                                <Font size="62.0" />
+                            </font>
+                        </Text>
+                        <Button fx:id="regButton" layoutX="345.0" layoutY="586.0" mnemonicParsing="false" onAction="#regButtonClicked" text="Register" />
+                        <Label fx:id="regGood" layoutX="468.0" layoutY="667.0" text="User successfully registered!" textFill="#109712" visible="false">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="regBad" layoutX="468.0" layoutY="674.0" text="User already exists!" textFill="#900a0a" visible="false">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
