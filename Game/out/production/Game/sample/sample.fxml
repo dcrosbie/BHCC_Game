@@ -7,16 +7,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane fx:controller="sample.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <tabs>
-        <Tab text="Log In">
+        <Tab fx:id="loginTab" text="Login / Logout">
             <content>
                 <AnchorPane>
                     <children>
-                        <TextField fx:id="logUsername" layoutX="355.0" layoutY="352.0" />
-                        <Label layoutX="184.0" layoutY="359.0" text="Enter Username: " />
-                        <Button fx:id="logButton" layoutX="355.0" layoutY="586.0" mnemonicParsing="false" text="Log In" />
-                        <Text layoutX="248.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page">
+                        <TextField fx:id="logUsername" layoutX="317.0" layoutY="370.0" />
+                        <Label layoutX="211.0" layoutY="375.0" text="Enter Username: " />
+                        <Button fx:id="logButton" layoutX="342.0" layoutY="451.0" mnemonicParsing="false" text="Log In">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+                        <Text layoutX="220.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page">
                             <effect>
                                 <DropShadow />
                             </effect>
@@ -34,20 +37,35 @@
                                 <Font size="23.0" />
                             </font>
                         </Label>
+                  <Button fx:id="logButton1" layoutX="342.0" layoutY="524.0" mnemonicParsing="false" onAction="#logoutClicked" text="Log Out">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="254.0" layoutY="601.0" text="Current User: ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="currentUser" fill="RED" layoutX="381.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Logged In" wrappingWidth="243.8212890625">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="loginErrorText" fill="RED" layoutX="100.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Error" textAlignment="CENTER" visible="false" wrappingWidth="566.2783203125">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
                     </children></AnchorPane>
             </content>
         </Tab>
-        <Tab text="Register">
+        <Tab fx:id="registerTab" text="Register">
             <content>
                 <AnchorPane>
                     <children>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                            <children>
-                                <TextField fx:id="regUsername" layoutX="355.0" layoutY="352.0" />
-                                <Label layoutX="184.0" layoutY="359.0" text="Enter Username: " />
-                            </children>
-                        </AnchorPane>
-                        <Text layoutX="159.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Page">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        <Text layoutX="142.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Page">
                             <effect>
                                 <DropShadow />
                             </effect>
@@ -55,19 +73,143 @@
                                 <Font size="62.0" />
                             </font>
                         </Text>
-                        <Button fx:id="regButton" layoutX="345.0" layoutY="586.0" mnemonicParsing="false" onAction="#regButtonClicked" text="Register" />
-                        <Label fx:id="regGood" layoutX="468.0" layoutY="667.0" text="User successfully registered!" textFill="#109712" visible="false">
+                        <Button fx:id="regButton" layoutX="334.0" layoutY="421.0" mnemonicParsing="false" onAction="#regButtonClicked" text="Register" textFill="GREEN">
+                     <font>
+                        <Font size="25.0" />
+                     </font></Button>
+                        <Label fx:id="regGood" layoutX="468.0" layoutY="667.0" text="User successfully registered!" textFill="BLUE" visible="false">
                             <font>
                                 <Font size="23.0" />
                             </font>
                         </Label>
-                        <Label fx:id="regBad" layoutX="468.0" layoutY="674.0" text="User already exists!" textFill="#900a0a" visible="false">
+                        <Label fx:id="regBad" layoutX="468.0" layoutY="674.0" text="User already exists!" textFill="RED" visible="false">
                             <font>
                                 <Font size="23.0" />
                             </font>
                         </Label>
+                          <Label layoutX="247.0" layoutY="375.0" text="Enter Username: " />
+                          <TextField fx:id="regUsername" layoutX="353.0" layoutY="370.0" />
                     </children></AnchorPane>
             </content>
         </Tab>
+      <Tab text="Game List">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab text="Lobby">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="14.0" layoutY="99.0" prefHeight="475.0" prefWidth="766.0">
+                    <columns>
+                      <TableColumn fx:id="userCol" prefWidth="384.0" text="Username" />
+                      <TableColumn fx:id="readyCol" minWidth="0.0" prefWidth="381.0" text="Ready" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="leaveButton" layoutX="212.0" layoutY="631.0" mnemonicParsing="false" text="Leave Lobby" />
+                  <Button fx:id="readyButton" layoutX="342.0" layoutY="614.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="116.0" text="Ready" textFill="#0bae2c" wrapText="true">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="startButton" layoutX="493.0" layoutY="631.0" mnemonicParsing="false" text="Start Game" />
+                  <Text layoutX="212.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Lobby">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font size="62.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Game">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="575.0" layoutY="14.0" prefHeight="542.0" prefWidth="205.0">
+                    <columns>
+                      <TableColumn prefWidth="204.0" text="Users in Game" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="690.0" layoutY="725.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="90.0" text="Leave Game" textFill="#d00000">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="55.0" layoutY="70.0" text="Attackers: ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="144.0" text="Defenders: ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="208.0" prefHeight="35.0" prefWidth="89.0" text="Workers: ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="46.0" layoutY="372.0" text="Unassigned: ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="163.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="92.78125">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="163.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="92.78125">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="163.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="92.78125">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="163.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="92.78125">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="295.0" layoutY="63.0" prefHeight="27.0" prefWidth="86.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="295.0" layoutY="137.0" prefHeight="27.0" prefWidth="86.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="295.0" layoutY="206.0" prefHeight="27.0" prefWidth="86.0">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="291.0" prefHeight="61.0" prefWidth="94.0" text="Amount to add from unassigned" textAlignment="CENTER" wrapText="true" />
+                  <Button layoutX="93.0" layoutY="706.0" mnemonicParsing="false" onAction="#assignButtonClicked" text="Assign">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <TextArea fx:id="gameScroll" editable="false" layoutX="20.0" layoutY="427.0" prefHeight="252.0" prefWidth="536.0" promptText="Game information scrolls here..." />
+                  <Button layoutX="623.0" layoutY="572.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" text="Attack!">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
     </tabs>
 </TabPane>
