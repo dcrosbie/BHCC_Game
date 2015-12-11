@@ -16,29 +16,11 @@ public class Controller {
     @FXML private Label regGood;
     @FXML private TextField regUsername;
     @FXML private TextArea gameScroll;
-    @FXML private Tab loginTab;
-    @FXML private Tab registerTab;
 
-
-
+    @FXML protected void loginClicked (ActionEvent e){} //soukaina, put your log in logic here
 
     @FXML protected void logoutClicked (ActionEvent e){
         Platform.exit();
-    }
-
-    @FXML protected void logToRegClicked (ActionEvent e){
-        registerTab.setDisable(false);
-        loginTab.setDisable(true);
-    }
-
-    @FXML protected void regToLogClicked (ActionEvent e){
-        registerTab.setDisable(true);
-        loginTab.setDisable(false);
-    }
-
-    @FXML protected void assignButtonClicked (ActionEvent e){
-        gameScroll.setScrollTop(0);
-        gameScroll.appendText("Hey\n");
     }
 
     @FXML protected void regButtonClicked (ActionEvent e){
@@ -75,4 +57,14 @@ public class Controller {
             System.out.println(err.getMessage());
         }
     }
+
+    @FXML protected void startGameClicked (ActionEvent e){} //rachid, put your start game logic here
+
+    @FXML protected void joinLobbyClicked (ActionEvent e){} //rachid, put your join lobby logic here
+
+    @FXML protected void joinGameClicked (ActionEvent e){} //rachid, put your join current game logic here
+
+    @FXML protected void assignClicked (ActionEvent e){} //link, put your logic in here to assign unassigned workers
+
+    @FXML protected void attackClicked (ActionEvent e){} //link, put your logic here to use game rules to attack
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
@@ -15,7 +16,7 @@
                     <children>
                         <TextField fx:id="logUsername" layoutX="317.0" layoutY="370.0" />
                         <Label layoutX="211.0" layoutY="375.0" text="Enter Username: " />
-                        <Button fx:id="logButton" layoutX="342.0" layoutY="451.0" mnemonicParsing="false" text="Log In">
+                        <Button layoutX="342.0" layoutY="451.0" mnemonicParsing="false" onAction="#loginClicked" text="Log In">
                      <font>
                         <Font size="19.0" />
                      </font></Button>
@@ -37,7 +38,7 @@
                                 <Font size="23.0" />
                             </font>
                         </Label>
-                  <Button fx:id="logButton1" layoutX="342.0" layoutY="524.0" mnemonicParsing="false" onAction="#logoutClicked" text="Log Out">
+                  <Button layoutX="342.0" layoutY="524.0" mnemonicParsing="false" onAction="#logoutClicked" text="Log Out">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -57,6 +58,7 @@
                         <Font size="16.0" />
                      </font>
                   </Text>
+                  <CubicCurve controlX1="-50.0" controlX2="50.0" controlY1="-100.0" controlY2="100.0" endX="150.0" fill="DARKRED" layoutX="383.0" layoutY="247.0" startX="-150.0" stroke="BLACK" />
                     </children></AnchorPane>
             </content>
         </Tab>
@@ -73,7 +75,7 @@
                                 <Font size="62.0" />
                             </font>
                         </Text>
-                        <Button fx:id="regButton" layoutX="334.0" layoutY="421.0" mnemonicParsing="false" onAction="#regButtonClicked" text="Register" textFill="GREEN">
+                        <Button layoutX="334.0" layoutY="421.0" mnemonicParsing="false" onAction="#regButtonClicked" text="Register" textFill="GREEN">
                      <font>
                         <Font size="25.0" />
                      </font></Button>
@@ -94,26 +96,52 @@
         </Tab>
       <Tab text="Game List">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="gameList" layoutX="14.0" layoutY="14.0" prefHeight="470.0" prefWidth="775.0">
+                    <columns>
+                      <TableColumn fx:id="idCol" editable="false" prefWidth="51.0" resizable="false" text="ID" />
+                      <TableColumn fx:id="gameNameCol" editable="false" prefWidth="259.0" resizable="false" text="Game Name" />
+                        <TableColumn fx:id="gameStatusCol" editable="false" prefWidth="172.0" resizable="false" text="Game Status" />
+                        <TableColumn fx:id="ownerCol" editable="false" prefWidth="192.0" resizable="false" text="Owner" />
+                        <TableColumn fx:id="numPlayersCol" editable="false" prefWidth="100.0" resizable="false" text="# of Players" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="320.0" layoutY="513.0" mnemonicParsing="false" onAction="#startGameClicked" prefHeight="62.0" prefWidth="160.0" text="Start New Game" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="341.0" layoutY="592.0" mnemonicParsing="false" onAction="#joinLobbyClicked" text="Join Lobby">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="339.0" layoutY="644.0" mnemonicParsing="false" onAction="#joinGameClicked" prefHeight="85.0" prefWidth="122.0" text="Join Game In Progress" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
         </content>
       </Tab>
       <Tab text="Lobby">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TableView layoutX="14.0" layoutY="99.0" prefHeight="475.0" prefWidth="766.0">
+                  <TableView fx:id="lobbyList" layoutX="14.0" layoutY="99.0" prefHeight="475.0" prefWidth="766.0">
                     <columns>
-                      <TableColumn fx:id="userCol" prefWidth="384.0" text="Username" />
-                      <TableColumn fx:id="readyCol" minWidth="0.0" prefWidth="381.0" text="Ready" />
+                      <TableColumn fx:id="userCol" editable="false" prefWidth="384.0" resizable="false" text="Username" />
+                      <TableColumn fx:id="readyCol" editable="false" minWidth="0.0" prefWidth="381.0" resizable="false" text="Ready" />
                     </columns>
                   </TableView>
-                  <Button fx:id="leaveButton" layoutX="212.0" layoutY="631.0" mnemonicParsing="false" text="Leave Lobby" />
-                  <Button fx:id="readyButton" layoutX="342.0" layoutY="614.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="116.0" text="Ready" textFill="#0bae2c" wrapText="true">
+                  <Button layoutX="212.0" layoutY="631.0" mnemonicParsing="false" text="Leave Lobby" />
+                  <Button layoutX="342.0" layoutY="614.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="116.0" text="Ready" textFill="#0bae2c" wrapText="true">
                      <font>
                         <Font size="26.0" />
                      </font>
                   </Button>
-                  <Button fx:id="startButton" layoutX="493.0" layoutY="631.0" mnemonicParsing="false" text="Start Game" />
+                  <Button layoutX="493.0" layoutY="631.0" mnemonicParsing="false" text="Start Game" />
                   <Text layoutX="212.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Lobby">
                      <effect>
                         <DropShadow />
@@ -130,9 +158,9 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <TableView layoutX="575.0" layoutY="14.0" prefHeight="542.0" prefWidth="205.0">
+                  <TableView fx:id="userList" layoutX="575.0" layoutY="14.0" prefHeight="542.0" prefWidth="205.0">
                     <columns>
-                      <TableColumn prefWidth="204.0" text="Users in Game" />
+                      <TableColumn prefWidth="204.0" resizable="false" text="Users in Game" />
                     </columns>
                   </TableView>
                   <Button layoutX="690.0" layoutY="725.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="90.0" text="Leave Game" textFill="#d00000">
