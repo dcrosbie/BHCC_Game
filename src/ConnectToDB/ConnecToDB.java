@@ -21,7 +21,7 @@ public class ConnecToDB {
         //Database url, database location in the host. use localhost if the database in your computer. 
         String url="jdbc:mysql://localhost:3306/BHCCgame"; 
         String username="root";
-        String password="";// password in your computer
+        String password="yassounehopii1";// password in your computer
         
         try {
             
