@@ -32,7 +32,7 @@ public class RoundIO {
            //Save result to res
             res=connect.getStm().executeQuery(query);
             
-            while(res!=null)
+            while(res.next())
             {
                 round=new Round(res.getInt(1), res.getString(2));
                 roundRecords.add(round);
