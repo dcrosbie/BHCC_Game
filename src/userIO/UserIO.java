@@ -29,7 +29,7 @@ public class UserIO {
         try
         {
             res=conn.getStm().executeQuery(query);
-            while(res!=null)
+            while(res.next())
             {
                 user=new User(res.getInt(1), res.getString(2));
                 users.add(user);
