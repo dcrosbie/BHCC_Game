@@ -58,6 +58,11 @@ public class Player{//information
         playerID = getplayerID;
     }
     
+    public String PlayerID()
+    {
+        return playerID;
+    }
+    
     public int ValueAttacker()
     {
         return attacker;

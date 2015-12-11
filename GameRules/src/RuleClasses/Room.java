@@ -31,6 +31,10 @@ public class Room
     {
         player[seatNumber] = addplayer;
     }
+    public String playerID(int playerNumber)
+    {
+        return player[playerNumber].PlayerID();
+    }
     public int nextRound()
     {
         boolean allReady = true;
@@ -66,7 +70,7 @@ public class Room
      {
          rule = input;
      }
-    
+   
       public void getPlayer(int input, int place)
     {
         player[maxPlayerValue] = new Player();
@@ -151,8 +155,6 @@ public class Room
            return worker*rule.workerValue;
                      //return moneyspent
           }          
-          
-
       }
       
        public int buildAttackers(int playerID, int attacker)

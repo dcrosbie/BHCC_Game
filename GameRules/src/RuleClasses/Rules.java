@@ -22,6 +22,7 @@ public class Rules {
     
      protected double attacker_defender_kdr,
                       attacker_farmer_kdr;
+                      //kill to death ratio
             
     protected boolean  killable_farmer = false;
    // protected boolean gamestarted = false;
