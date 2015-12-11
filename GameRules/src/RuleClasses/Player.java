@@ -15,6 +15,7 @@ public class Player{//information
     private int attacker, defender, farmer;
     protected int credit;
     private String playerID;
+    protected String playerName;
     protected boolean isReady = false;
     //private double attack_defender_kdr, income_per_round, income_per_farmer,
      //       victoryReward;
@@ -31,6 +32,11 @@ public class Player{//information
         farmer = 0;
         playerID = playerName;
         credit = initCredits;
+    }
+    
+     public void getPlayerName(String getPlayerName)
+    {
+        playerName = getPlayerName;
     }
     
     public void getAttacker(int getattacker)
