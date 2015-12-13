@@ -131,8 +131,8 @@
                <children>
                   <TableView fx:id="lobbyList" layoutX="14.0" layoutY="99.0" prefHeight="475.0" prefWidth="766.0">
                     <columns>
-                      <TableColumn fx:id="userCol" editable="false" prefWidth="384.0" resizable="false" text="Username" />
-                      <TableColumn fx:id="readyCol" editable="false" minWidth="0.0" prefWidth="381.0" resizable="false" text="Ready" />
+                      <TableColumn fx:id="lobbyUserCol" editable="false" prefWidth="384.0" resizable="false" text="Username" />
+                      <TableColumn fx:id="lobbyReadyCol" editable="false" minWidth="0.0" prefWidth="381.0" resizable="false" text="Ready" />
                     </columns>
                   </TableView>
                   <Button layoutX="212.0" layoutY="631.0" mnemonicParsing="false" text="Leave Lobby" />
@@ -163,7 +163,7 @@
                       <TableColumn prefWidth="204.0" resizable="false" text="Users in Game" />
                     </columns>
                   </TableView>
-                  <Button layoutX="690.0" layoutY="725.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="90.0" text="Leave Game" textFill="#d00000">
+                  <Button layoutX="690.0" layoutY="725.0" mnemonicParsing="false" onAction="#quitGameClicked" prefHeight="21.0" prefWidth="90.0" text="Quit Game" textFill="#d00000">
                      <font>
                         <Font size="12.0" />
                      </font>
@@ -224,13 +224,13 @@
                      </font>
                   </TextField>
                   <Label layoutX="291.0" prefHeight="61.0" prefWidth="94.0" text="Amount to add from unassigned" textAlignment="CENTER" wrapText="true" />
-                  <Button layoutX="93.0" layoutY="706.0" mnemonicParsing="false" onAction="#assignButtonClicked" text="Assign">
+                  <Button layoutX="93.0" layoutY="706.0" mnemonicParsing="false" onAction="#assignClicked" text="Assign">
                      <font>
                         <Font size="19.0" />
                      </font>
                   </Button>
                   <TextArea fx:id="gameScroll" editable="false" layoutX="20.0" layoutY="427.0" prefHeight="252.0" prefWidth="536.0" promptText="Game information scrolls here..." />
-                  <Button layoutX="623.0" layoutY="572.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="110.0" text="Attack!">
+                  <Button layoutX="623.0" layoutY="572.0" mnemonicParsing="false" onAction="#attackClicked" prefHeight="39.0" prefWidth="110.0" text="Attack!">
                      <font>
                         <Font size="19.0" />
                      </font>

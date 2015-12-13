@@ -28,22 +28,17 @@ public class Controller {
             String s = regUsername.getText();
             regBad.setVisible(false);
             regGood.setVisible(false);
-            String host = "jdbc:mysql://173.194.235.163:3306/BHCCgame";
-            String dName = "scott";
-            String dPass = "tiger";
 
             String insertName = "INSERT INTO PLAYER (playerNAME) VALUES (?)"; //mysql update
             String queryName = "SELECT * FROM PLAYER where playerNAME = (?)"; //mysql query
 
-            Connection con = DriverManager.getConnection(host, dName, dPass);
-
-
+            Connection con = DBConnect.connect();
 
             PreparedStatement queryStatement = con.prepareStatement(queryName);
             queryStatement.setString(1, s);
             ResultSet resultSet = queryStatement.executeQuery(); //use preparedstatement to deal with query
 
-            if(resultSet.next()){ //if there is any match, it will return a result set, and it will throw error
+            if(resultSet.next() || s == ""){ //if there is any match, or if it is an empty string, it will return a result set, and it will throw error
                 regBad.setVisible(true);
                 return;
             }
@@ -67,4 +62,8 @@ public class Controller {
     @FXML protected void assignClicked (ActionEvent e){} //link, put your logic in here to assign unassigned workers
 
     @FXML protected void attackClicked (ActionEvent e){} //link, put your logic here to use game rules to attack
+
+    @FXML protected void quitGameClicked(ActionEvent e){}
+
+    //@FXML protected void
 }

@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <tabs>
         <Tab fx:id="loginTab" text="Login / Logout">
             <content>
@@ -100,11 +100,11 @@
                <children>
                   <TableView fx:id="gameList" layoutX="14.0" layoutY="14.0" prefHeight="470.0" prefWidth="775.0">
                     <columns>
-                      <TableColumn fx:id="idCol" editable="false" prefWidth="51.0" resizable="false" text="ID" />
-                      <TableColumn fx:id="gameNameCol" editable="false" prefWidth="259.0" resizable="false" text="Game Name" />
-                        <TableColumn fx:id="gameStatusCol" editable="false" prefWidth="172.0" resizable="false" text="Game Status" />
-                        <TableColumn fx:id="ownerCol" editable="false" prefWidth="192.0" resizable="false" text="Owner" />
-                        <TableColumn fx:id="numPlayersCol" editable="false" prefWidth="100.0" resizable="false" text="# of Players" />
+                      <TableColumn fx:id="idCol" editable="false" prefWidth="51.0" resizable="false" sortable="false" text="ID" />
+                      <TableColumn fx:id="gameNameCol" editable="false" prefWidth="259.0" resizable="false" sortable="false" text="Game Name" />
+                        <TableColumn fx:id="gameStatusCol" editable="false" prefWidth="172.0" resizable="false" sortable="false" text="Game Status" />
+                        <TableColumn fx:id="ownerCol" editable="false" prefWidth="192.0" resizable="false" sortable="false" text="Owner" />
+                        <TableColumn fx:id="numPlayersCol" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="# of Players" />
                     </columns>
                   </TableView>
                   <Button layoutX="320.0" layoutY="513.0" mnemonicParsing="false" onAction="#startGameClicked" prefHeight="62.0" prefWidth="160.0" text="Start New Game" textAlignment="CENTER" wrapText="true">
@@ -131,8 +131,8 @@
                <children>
                   <TableView fx:id="lobbyList" layoutX="14.0" layoutY="99.0" prefHeight="475.0" prefWidth="766.0">
                     <columns>
-                      <TableColumn fx:id="userCol" editable="false" prefWidth="384.0" resizable="false" text="Username" />
-                      <TableColumn fx:id="readyCol" editable="false" minWidth="0.0" prefWidth="381.0" resizable="false" text="Ready" />
+                      <TableColumn fx:id="lobbyUserCol" editable="false" prefWidth="384.0" resizable="false" sortable="false" text="Username" />
+                      <TableColumn fx:id="lobbyReadyCol" editable="false" minWidth="0.0" prefWidth="381.0" resizable="false" sortable="false" text="Ready" />
                     </columns>
                   </TableView>
                   <Button layoutX="212.0" layoutY="631.0" mnemonicParsing="false" text="Leave Lobby" />
