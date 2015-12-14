@@ -1,5 +1,9 @@
 package sample;
 
+//inital work by blake.  some UI buttons still need to be hooked up.
+//please use DBConnect.getConnection() to talk to the DB, as a connection will already be made and will
+//make the ui much more responsive than having to open a connection every time we click a button
+
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -23,6 +27,7 @@ public class Controller {
     private static Game currentGame;
     private static Player currentPlayer;
 
+
     public static Game getCurrentGame() {
         return currentGame;
     }
@@ -45,6 +50,7 @@ public class Controller {
     } //soukaina, put your log in logic here
 
     @FXML protected void logoutClicked (ActionEvent e){
+        DBConnect.disconnect();
         Platform.exit();
     }
 
@@ -69,7 +75,12 @@ public class Controller {
             String insertName = "INSERT INTO PLAYER (playerNAME) VALUES (?)"; //mysql update
             String queryName = "SELECT * FROM PLAYER where playerNAME = (?)"; //mysql query
 
-            Connection con = DBConnect.connect();
+            Connection con = null;
+            try {
+                con = DBConnect.getConnection();
+            } catch (ClassNotFoundException e1) {
+                e1.printStackTrace();
+            }
 
             PreparedStatement queryStatement = con.prepareStatement(queryName);
             queryStatement.setString(1, s);

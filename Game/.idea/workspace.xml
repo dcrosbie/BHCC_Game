@@ -79,10 +79,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateTableService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="updateTableService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.26726058">
               <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
@@ -113,14 +123,13 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
+              <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
                 <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-                <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-                <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-                <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+                <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+                <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
               </folding>
             </state>
           </provider>
@@ -146,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.8333335">
+            <state vertical-scroll-proportion="-14.0">
               <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
               <folding />
             </state>
@@ -188,12 +197,13 @@
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Game.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/updateTableService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
       </list>
     </option>
   </component>
@@ -821,11 +831,12 @@
       <workItem from="1450108867761" duration="417000" />
       <workItem from="1450109581127" duration="455000" />
       <workItem from="1450110185525" duration="141000" />
+      <workItem from="1450111016875" duration="905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35087000" />
+    <option name="totallyTimeSpent" value="35992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -847,7 +858,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42668268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42668268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32260373" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
@@ -937,9 +948,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -999,9 +1009,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1097,9 +1106,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1132,9 +1140,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1185,9 +1192,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1228,9 +1234,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1264,9 +1269,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1300,9 +1304,8 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1322,13 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37530664">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -1381,6 +1377,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.5">
@@ -1392,47 +1399,43 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
-          </folding>
+          <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
+          <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
-            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
-            <marker date="1450107926000" expanded="true" signature="1905:1947" placeholder="INSERT INTO PLAYER... " />
-            <marker date="1450107926000" expanded="true" signature="1997:2040" placeholder="SELECT * FRO... PLAYER" />
+            <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
+            <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.8333335">
-          <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="-0.26726058">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
   </component>

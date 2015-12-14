@@ -19,6 +19,8 @@ public class Main extends Application {
         //svc.setPeriod(Duration.seconds(5));
         //svc.start();
 
+        DBConnect.connect();
+
         Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
 
         //user must click Log Out to exit, the x button does not work.

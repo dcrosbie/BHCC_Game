@@ -2,7 +2,7 @@ package sample;
 
 //this is to connect to the DB with standard error catches
 //written by Blake DeLee
-//just use DBConnect.connect() to create an instance of a connection in your code
+//the connection to the DB is made at the beginning of main, so use DBConnection.getConnection to use the instance
 
 
 import java.sql.DriverManager;
@@ -35,6 +35,14 @@ public class DBConnect {
         connect();
         return conn;
 
+    }
+
+    public static void disconnect() {
+        try {
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
 
