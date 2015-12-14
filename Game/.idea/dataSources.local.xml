@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - BHCCgame@173.194.235.163" uuid="7bdcd44b-9635-4dad-b028-0d96c30c5e47">
+      <secret-storage>master_key</secret-storage>
+      <user-name>blake</user-name>
+      <schema-pattern>BHCCgame.*</schema-pattern>
+      <default-schemas>BHCCgame.*</default-schemas>
+    </data-source>
+  </component>
+</project>
