@@ -17,12 +17,12 @@ public class User {
     private int userId;
     private String username;
   
-    
+    // default constractor
     public User()
     {
         
     }
-    
+    // Pass userId and user name to the constracton
     public User (int userId, String username)
     {
         this.userId=userId;
