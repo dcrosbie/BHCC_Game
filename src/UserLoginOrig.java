@@ -49,18 +49,18 @@ public class UserLoginOrig extends Application {
         borderPane.setCenter(pane);
         
 
-
+      // event handler for the ligin button
         loginBtn.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
             public void handle(ActionEvent event) {
-                 ConnecToDB conn=new ConnecToDB();
-                 UserIO userIO=new UserIO();
-                 userIO.readUsers(conn);
+                 ConnecToDB conn=new ConnecToDB();// create a connection object
+                 UserIO userIO=new UserIO();// create a userIo object fro the userIO class that deals with the user input
+                 userIO.readUsers(conn);// pass conection readUsers() fuction to get all usernames and IDs fom database
                  if(userIO.checkTheUserOut(userNameInput.getText())!=0)
                  {
                      System.out.println("User existe");
-                     // Rachid's code 
+                     // Rachid's code can go here
                  }
                  else 
                  {
