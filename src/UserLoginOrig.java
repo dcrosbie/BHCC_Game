@@ -55,8 +55,8 @@ public class UserLoginOrig extends Application {
             @Override
             public void handle(ActionEvent event) {
                  ConnecToDB conn=new ConnecToDB();// create a connection object
-                 UserIO userIO=new UserIO();// create a userIo object fro the userIO class that deals with the user input
-                 userIO.readUsers(conn);// pass conection readUsers() fuction to get all usernames and IDs fom database
+                 UserIO userIO=new UserIO();// create a userIo object for the userIO class that deals with the user inputs
+                 userIO.readUsers(conn);// pass conection to readUsers() fuction to get all usernames and IDs fom database
                  if(userIO.checkTheUserOut(userNameInput.getText())!=0)
                  {
                      System.out.println("User existe");
