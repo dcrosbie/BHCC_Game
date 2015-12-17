@@ -1,7 +1,7 @@
 
-package userIO;
+package userIO; // import userIO package
 import java.util.*;
-import ConnectToDB.ConnecToDB;
+import ConnectToDB.ConnecToDB; // import connection class (ConnecToDB) in the ConnectToDB package
 import java.sql.*;
 /**
  *
@@ -10,8 +10,8 @@ import java.sql.*;
 public class UserIO {
   
     private ResultSet res;
-    private User user=new User();
-    private ArrayList<User> users=new ArrayList<>();  
+    private User user=new User(); // create an object of type user
+    private ArrayList<User> users=new ArrayList<>();  // create arraylist to hold data from user table
     
    //Create a default constructor 
     public UserIO()
@@ -19,7 +19,7 @@ public class UserIO {
         
     }
           
-    //This method read all users records from user table in BHCCgame datebase and save all the records inside an arraylist
+    //This method read all users records from user table in BHCCgame datebase and save all the records in an arraylist
     public void readUsers(ConnecToDB conn)
     {
          
@@ -28,6 +28,7 @@ public class UserIO {
         
         try
         {
+          // get all the users' names and IDs into an array
             res=conn.getStm().executeQuery(query);
             while(res.next())
             {
@@ -40,10 +41,9 @@ public class UserIO {
         }
     }
     
-    //This method accept a username as a paramter to go look in the array list return
-    //by readusers() methods above and see if the username existe or not. 
-
-   
+    //This method accept a username as a paramter to check if it exist in 
+    //the array list returned by readusers() methods above.
+    
    public int checkTheUserOut(String username)
    {
        
@@ -55,6 +55,6 @@ public class UserIO {
               userId=users.get(i).getUserId();
           }
       }
-      return userId;
+      return userId; // returns the ID if found
    }
 }
