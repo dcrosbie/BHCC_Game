@@ -24,17 +24,17 @@ public class updateTableService extends ScheduledService<Void> {
     @FXML private TableView lobbyList;
     @FXML private TableColumn lobbyUserCol;
     @FXML private TableColumn lobbyReadyCol;
-    private ObservableList<Player> playerList;
+    ObservableList<Player> playerList;
 
     protected Task createTask() {
         playerList = FXCollections.observableArrayList();
         try{
             String gameID = Integer.toString(Controller.getCurrentGame().getIdGAME()); //need to pass ID from game class to here
             Connection c = DBConnect.connect();
-            lobbyUserCol.setCellValueFactory(new PropertyValueFactory<Player, String>("playerNAME"));
-            lobbyReadyCol.setCellValueFactory(new PropertyValueFactory<Player, Boolean>("isREADY"));
+            lobbyUserCol.setCellValueFactory(new PropertyValueFactory<Player, String>("playerName"));
+            lobbyReadyCol.setCellValueFactory(new PropertyValueFactory<Player, String>("isReady"));
 
-            String lobbyTableSQL = "SELECT playerNAME FROM PLAYER where idCurrentGAME = (?) ORDER BY playerNAME";
+            String lobbyTableSQL = "SELECT playerNAME AND isREADY FROM PLAYER where idCurrentGAME = (?) ORDER BY playerNAME";
 
             PreparedStatement ps = c.prepareStatement(lobbyTableSQL);
             ps.setString(1, gameID);
@@ -42,8 +42,8 @@ public class updateTableService extends ScheduledService<Void> {
 
             while (rs.next()){
                 Player p = new Player();
-                p.setPlayerNAME(rs.getString("playerNAME"));
-                p.setREADY(rs.getInt("isREADY"));
+                p.setPlayerName(rs.getString("playerNAME"));
+                p.setReady(rs.getInt("isREADY"));
                 playerList.add(p);
             }
             lobbyList.setItems(playerList);

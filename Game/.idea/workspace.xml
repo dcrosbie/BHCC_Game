@@ -79,10 +79,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,29 +89,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateTableService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="updateTableService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.26726058">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+                <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
               </folding>
             </state>
           </provider>
@@ -123,14 +111,27 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+              <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
                 <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+                <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+                <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+                <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
                 <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
                 <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.375">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,16 +150,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/sample/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.0">
+            <state vertical-scroll-proportion="0.01997337">
               <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
               <folding />
             </state>
@@ -199,11 +200,12 @@
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/updateTableService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sample/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/main/java/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/updateTableService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/DBConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sample/Main.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -218,6 +220,11 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -230,10 +237,6 @@
           <option name="myItemId" value="Game" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -243,6 +246,10 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="Game" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -304,16 +311,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -390,9 +394,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -414,9 +417,10 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="maven&#9;PSI&#9;JAVA://org.apache.maven.Maven" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -512,6 +516,16 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -831,12 +845,21 @@
       <workItem from="1450108867761" duration="417000" />
       <workItem from="1450109581127" duration="455000" />
       <workItem from="1450110185525" duration="141000" />
-      <workItem from="1450111016875" duration="905000" />
+      <workItem from="1450111016875" duration="988000" />
+      <workItem from="1450190562268" duration="254000" />
+      <workItem from="1450192194681" duration="10000" />
+      <workItem from="1450271412539" duration="73000" />
+      <workItem from="1450271841806" duration="11000" />
+      <workItem from="1450272054319" duration="35000" />
+      <workItem from="1450313040705" duration="8000" />
+      <workItem from="1450361289394" duration="1609000" />
+      <workItem from="1450381488215" duration="4035000" />
+      <workItem from="1450443970202" duration="1186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35992000" />
+    <option name="totallyTimeSpent" value="43296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -858,10 +881,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42668268" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42548078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32260373" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32188842" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -910,13 +933,22 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,9 +956,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +965,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -948,6 +978,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -985,9 +1018,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -996,7 +1027,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1009,6 +1040,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1046,9 +1080,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1089,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1066,9 +1098,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1107,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1106,6 +1136,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1116,9 +1149,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,7 +1158,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1140,6 +1171,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1168,9 +1202,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1179,7 +1211,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
           </folding>
         </state>
       </provider>
@@ -1192,6 +1224,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1220,9 +1255,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,6 +1267,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1255,9 +1291,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,6 +1303,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1290,9 +1327,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1304,6 +1339,9 @@
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
@@ -1328,37 +1366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33184856">
-          <caret line="862" column="0" selection-start-line="862" selection-start-column="0" selection-end-line="862" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33184856">
-          <caret line="3096" column="0" selection-start-line="3096" selection-start-column="0" selection-end-line="3096" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MAVEN/groupId:Game:1.0-SNAPSHOT">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1377,21 +1384,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+    <entry file="jar://$PROJECT_DIR$/lib/maven-core-3.0.jar!/org/apache/maven/Maven.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.0">
-          <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.115830116">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1399,43 +1403,71 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/DBConnect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="114" selection-start-line="4" selection-start-column="114" selection-end-line="4" selection-end-column="114" />
-          <folding />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1450384002000" expanded="true" signature="1317:1404" placeholder="SELECT playe... PLAYER" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+          <caret line="68" column="57" selection-start-line="68" selection-start-column="57" selection-end-line="68" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#switchToRegClicked#0;class#Controller#0" expanded="false" />
             <element signature="method#switchToLogClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#regButtonClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#startGameClicked#0;class#Controller#0" expanded="false" />
+            <element signature="method#leaveLobbyClicked#0;class#Controller#0" expanded="false" />
             <marker date="1450111923000" expanded="true" signature="2209:2251" placeholder="INSERT INTO PLAYER... " />
             <marker date="1450111923000" expanded="true" signature="2301:2344" placeholder="SELECT * FRO... PLAYER" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/updateTableService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.26726058">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <marker date="1450110318000" expanded="true" signature="1326:1401" placeholder="SELECT playe... PLAYER" />
-          </folding>
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="19" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01997337">
+          <caret line="154" column="29" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>

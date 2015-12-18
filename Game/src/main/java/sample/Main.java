@@ -8,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
+import java.sql.Connection;
+
 
 public class Main extends Application {
 
@@ -21,12 +23,14 @@ public class Main extends Application {
 
         DBConnect.connect();
 
+
         Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
 
         //user must click Log Out to exit, the x button does not work.
         primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
+                DBConnect.disconnect();
                 event.consume();
             }
         });
