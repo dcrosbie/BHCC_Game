@@ -118,10 +118,20 @@ public class Controller {
         lobbyTab.setDisable(true);
     }
 
+    @FXML protected void lobbyToGameClicked (ActionEvent e){
+        gameTab.setDisable(false);
+        tabPane.getSelectionModel().select(gameTab);
+        lobbyTab.setDisable(true);
+    }
+
     @FXML protected void assignClicked (ActionEvent e){} //link, put your logic in here to assign unassigned workers
 
     @FXML protected void attackClicked (ActionEvent e){} //link, put your logic here to use game rules to attack
 
-    @FXML protected void quitGameClicked(ActionEvent e){}
+    @FXML protected void quitGameClicked(ActionEvent e){
+        listTab.setDisable(false);
+        tabPane.getSelectionModel().select(listTab);
+        gameTab.setDisable(true);
+    }
 
 }

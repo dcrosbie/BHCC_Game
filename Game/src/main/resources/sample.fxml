@@ -150,7 +150,7 @@
                         <Font size="26.0" />
                      </font>
                   </Button>
-                  <Button layoutX="493.0" layoutY="631.0" mnemonicParsing="false" text="Start Game" />
+                  <Button layoutX="493.0" layoutY="631.0" mnemonicParsing="false" onAction="#lobbyToGameClicked" text="Start Game" />
                   <Text layoutX="212.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Lobby">
                      <effect>
                         <DropShadow />
